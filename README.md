@@ -1,36 +1,33 @@
 # Nuclear - (Nuklear)
 
-Una biblioteca que proporciona el soporte de JME3 para integrar la biblioteca
-de interfaz gráfica de usuario ANSI C mediante los enlaces de LWJGL3. 
+A library that provides JME3 compatibility for integrating the ANSI C Nuklear
+graphical user interface library using LWJGL3 bindings.
 
-El nombre de esta biblioteca biene de un juego de palabras de dos idiomas
-en el cual solo cambia la letra K por C, que suenan igual en español.
+The name of this library comes from a play on words in two languages, in which 
+only the letter K is changed to C, which sound the same in Spanish.
 
 ![Nuclear - JME3](./src/test/resources/captura.png)
 
-El backend de la interfaz gráfica se renderiza medinate un post procesado
-que ofrece JME3, su arquitectura esta inspirada en el módulo de Nifty que
-integra JME.
+The graphical interface is rendered using post-processing provided by JME3; its
+architecture is inspired by the Nifty module integrated into JME.
 
-**Bibliotecas utilizadas**
+**Libraries used**
 
 - JME3
 - Nuklear
 - LWJGL3
 
-## Construyendo con Nuclear
+## Building with Nuclear
 
-Nuclear se puede agregar como una dependencia normal usando los archivos jar 
-[stable]() o usando 
-_**JitPack**_ de la siguiente manera:
+jMe3GL2 can be added as a normal dependency using the stable jar files or using _**JitPack**_ as follows:
 
-**Paso 1. Agregue el repositorio maven de JitPack**
+**Step 1. Add the JitPack maven repository**
 
 ```gradle
     maven { url "https://jitpack.io"  }
 ```
 
-**Paso 2. Agregue las dependencias necesarias**
+**Step 2. Add the necessary dependencies**
 
 ```gradle
 ...
@@ -48,16 +45,16 @@ ext {
     implementation "org.lwjgl:lwjgl-nuklear::$lwjglNatives"
 ```
 
-**Iniciando Nuclear**
+**Starting Nuclear**
 
-Si es la primera vez que usas Nuclear, puedes consultar algunos de estos recursos 
-para guiarte en el uso de esta gran biblioteca.
+If this is your first time using Nuclear, you can consult some of these resources 
+to guide you in using this great library.
 
 - [Muestra](./src/test/java/org/nrr/nk/test/NkSimpleApplication.java)
 - [Con un estilo de JME3](./src/test/java/org/nrr/nk/test/NkJmeApplication.java)
 
-Si aun no sabes como usar o como funciona Nuklear, puede consular la web de
-**Alexander Fox** que a realizado un gran trabajo, explicando como es la lógica
-y más.
+If you still don't know how to use or how Nuklear (C) works, you can check out the website of
+**Alexander Fox**, who has done a great job explaining the logic
+and more.
 
 [Ir la turorial](https://www.thecodingfox.com/nuklear-usage-guide-lwjgl)
