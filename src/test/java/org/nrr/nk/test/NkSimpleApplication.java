@@ -35,7 +35,6 @@ import com.jme3.math.ColorRGBA;
 import com.jme3.system.AppSettings;
 
 import org.lwjgl.nuklear.NkColorf;
-import org.lwjgl.nuklear.NkContext;
 import org.nrr.nk.NkBitmapFontHandler;
 
 import org.nrr.nk.NkDisplay;
