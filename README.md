@@ -50,11 +50,11 @@ ext {
 If this is your first time using Nuclear, you can consult some of these resources 
 to guide you in using this great library.
 
-- [Muestra](./src/test/java/org/nrr/nk/test/NkSimpleApplication.java)
-- [Con un estilo de JME3](./src/test/java/org/nrr/nk/test/NkJmeApplication.java)
+- [Sample](./src/test/java/org/nrr/nk/test/NkSimpleApplication.java)
+- [In JME3 style](./src/test/java/org/nrr/nk/test/NkJmeApplication.java)
 
 If you still don't know how to use or how Nuklear (C) works, you can check out the website of
 **Alexander Fox**, who has done a great job explaining the logic
 and more.
 
-[Ir la turorial](https://www.thecodingfox.com/nuklear-usage-guide-lwjgl)
+[Go to tutorial](https://www.thecodingfox.com/nuklear-usage-guide-lwjgl)
