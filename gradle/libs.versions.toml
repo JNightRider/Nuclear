@@ -1,0 +1,23 @@
+## catalog of libraries and plugins used to build the jmonkeyengine project
+
+[versions]
+
+lwjgl3        = "3.3.6"
+jmonkeyengine = "3.8.1-stable"
+
+[libraries]
+
+lwjgl-stb       = { module = "org.lwjgl:lwjgl-stb",      version.ref = "lwjgl3" }
+
+jme3-core      = { module = "org.jmonkeyengine:jme3-core",    version.ref = "jmonkeyengine" }
+jme3-desktop   = { module = "org.jmonkeyengine:jme3-desktop", version.ref = "jmonkeyengine" }
+jme3-plugins   = { module = "org.jmonkeyengine:jme3-plugins", version.ref = "jmonkeyengine" }
+jme3-effects   = { module = "org.jmonkeyengine:jme3-effects", version.ref = "jmonkeyengine" }
+jme3-lwjgl3    = { module = "org.jmonkeyengine:jme3-lwjgl3",  version.ref = "jmonkeyengine" }
+
+jme3-awt-dialogs    = { module = "org.jmonkeyengine:jme3-awt-dialogs",  version.ref = "jmonkeyengine" }
+
+[bundles]
+
+[plugins]
+

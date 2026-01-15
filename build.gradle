@@ -1,0 +1,40 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.nrr.nk'
+version = '1.0.0'
+
+ext {
+    lwjglNatives = "natives-linux"
+    lwjglVersion = "3.3.6"
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation platform("org.lwjgl:lwjgl-bom:$lwjglVersion")
+    implementation "org.lwjgl:lwjgl-nuklear"
+
+    implementation (libs.lwjgl.stb)
+    implementation "org.lwjgl:lwjgl-stb::$lwjglNatives"
+    implementation "org.lwjgl:lwjgl-nuklear::$lwjglNatives"
+
+    implementation(libs.jme3.core)
+    implementation(libs.jme3.effects)
+    implementation(libs.jme3.lwjgl3)
+    runtimeOnly(libs.jme3.plugins)
+
+    testImplementation(libs.jme3.desktop)
+    testImplementation(libs.jme3.awt.dialogs)
+
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+test {
+    useJUnitPlatform()
+}
