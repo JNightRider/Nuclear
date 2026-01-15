@@ -431,6 +431,7 @@ public final class NkDisplay implements SceneProcessor {
      * @param clazz class
      * @return NkRender
      */
+    @SuppressWarnings("unchecked")
     public <T extends NkRender> T getNkRender(Class<T> clazz) {
         for (NkRender render : this.renders) {
             if (clazz.isAssignableFrom(render.getClass())) {

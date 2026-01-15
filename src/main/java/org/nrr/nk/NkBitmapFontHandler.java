@@ -173,6 +173,7 @@ public interface NkBitmapFontHandler {
          * 
          * @return NkBitmapFontHandler
          */
+        @SuppressWarnings("unchecked")
         public NkBitmapFontHandler build() {
             if (size == -1) {
                 size = font.getCharSet().getLineHeight();

@@ -5,22 +5,17 @@ plugins {
 group = 'org.nrr.nk'
 version = '1.0.0'
 
-ext {
-    lwjglNatives = "natives-linux"
-    lwjglVersion = "3.3.6"
-}
-
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    implementation platform("org.lwjgl:lwjgl-bom:$lwjglVersion")
-    implementation "org.lwjgl:lwjgl-nuklear"
+    implementation platform(libs.lwjgl.bom)
+    implementation (libs.lwjgl.nuklear)
+    implementation (libs.lwjgl.nuklear.native)
 
     implementation (libs.lwjgl.stb)
-    implementation "org.lwjgl:lwjgl-stb::$lwjglNatives"
-    implementation "org.lwjgl:lwjgl-nuklear::$lwjglNatives"
+    implementation (libs.lwjgl.stb.native)
 
     implementation(libs.jme3.core)
     implementation(libs.jme3.effects)
@@ -29,10 +24,10 @@ dependencies {
 
     testImplementation(libs.jme3.desktop)
     testImplementation(libs.jme3.awt.dialogs)
+}
 
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
-    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+tasks.withType(JavaCompile).configureEach {
+    options.compilerArgs += ['-Xlint:unchecked', '-Xlint:deprecation']
 }
 
 test {

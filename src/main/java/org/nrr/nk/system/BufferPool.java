@@ -77,6 +77,7 @@ public final class BufferPool<E extends Buffer> extends ObjectPool<E>{
     /*(non-Javadoc)
      */
     @Override
+    @SuppressWarnings("unchecked")
     protected E create(int capacity) {
         if (buffer.isAssignableFrom(ShortBuffer.class)) {
             return (E) BufferUtils.createShortBuffer(capacity);
