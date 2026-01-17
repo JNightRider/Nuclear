@@ -76,7 +76,7 @@ public class Vertex {
     private int min;
     
     /**
-     * Generate a new vertex handler {@codeVertex } with the respective capacities 
+     * Generate a new vertex handler {@code Vertex } with the respective capacities 
      * of each buffer.
      * 
      * @param capacity int

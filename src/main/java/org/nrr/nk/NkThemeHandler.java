@@ -46,15 +46,34 @@ public interface NkThemeHandler {
      * Lista de temas predeterminadas.
      */
     public static enum Theme {
+        /** Theme: THEME_BLACK|default. */
         THEME_BLACK,
+        
+        /** Theme: THEME_WHITE. */
         THEME_WHITE,
+        
+        /** Theme: THEME_RED. */
         THEME_RED,
+        
+        /** Theme: THEME_BLUE. */
         THEME_BLUE,
+        
+        /** Theme: THEME_DARK. */
         THEME_DARK,
+        
+        /** Theme: THEME_DRACULA. */
         THEME_DRACULA,
+        
+        /** Theme: THEME_CATPPUCCIN_LATTE. */
         THEME_CATPPUCCIN_LATTE,
+        
+        /** Theme: THEME_CATPPUCCIN_FRAPPE. */
         THEME_CATPPUCCIN_FRAPPE,
+        
+        /** Theme: THEME_CATPPUCCIN_MACCHIATO. */
         THEME_CATPPUCCIN_MACCHIATO,
+        
+        /** Theme: THEME_CATPPUCCIN_MOCHA. */
         THEME_CATPPUCCIN_MOCHA
     }
     
