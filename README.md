@@ -44,7 +44,7 @@ ext {
     implementation "org.lwjgl:lwjgl-stb::$lwjglNatives"
     implementation "org.lwjgl:lwjgl-nuklear::$lwjglNatives"
     
-    implementation 'com.github.JNightRider.Nuclear:nuclear:1.0.0'
+    implementation 'com.github.JNightRider:Nuclear:1.0.1'
 ```
 
 **Starting Nuclear**
