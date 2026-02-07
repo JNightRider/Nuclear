@@ -3,8 +3,8 @@
 [versions]
 
 lwjgl3        = "3.3.6"
-lwjglNatives  = "natives-linux"
-jmonkeyengine = "3.8.1-stable"
+lwjglNatives  = "?"
+jmonkeyengine = "3.9.0-stable"
 
 [libraries]
 

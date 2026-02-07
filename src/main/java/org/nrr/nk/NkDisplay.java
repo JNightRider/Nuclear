@@ -179,8 +179,8 @@ public final class NkDisplay implements SceneProcessor {
      */
     public NkDisplay(AssetManager assetManager, InputManager inputManager, RenderManager renderManager) {
         this(assetManager, inputManager, renderManager, BufferConfig.builder()
-                                                                           .maxElementBuffer(MAX_ELEMENT_BUFFER)
-                                                                           .maxVertexBuffer(MAX_VERTEX_BUFFER));
+                                                                        .maxElementBuffer(MAX_ELEMENT_BUFFER)
+                                                                        .maxVertexBuffer(MAX_VERTEX_BUFFER));
     }
     
     /**
